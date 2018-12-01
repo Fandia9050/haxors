@@ -1,0 +1,21 @@
+<! DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Text akan diambil karakter ke-2 dan ke-6 <br/>
+	Masukkan Teks :<input type='text' id='txtkata'>
+	<button onclick='olahkata()'>Kerjakan</button>
+	<div id='txthasil'>Hasil</div>
+<script type="text/javascript">
+	function olahkata(){
+		var kata = document.getElementById('txtkata').value;
+		var pick = kata.substring(1,6);
+		document.getElementById('txthasil').innerHTML = pick;
+	}
+
+</script>
+</body>
+</html>
